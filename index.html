@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- representa la raiz de un documento HTML. El resto de elementos descienden de este elemento -->
+<head> <!-- Contiene todos los elementos no visuales de la pagina,metadatos, etc... -->
+    <title>UCAMP-WDF7</title>
+    <!-- Tercera forma de agregar estilos y es la más recomendada
+    En este caso se utiliza el CDN de Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Así se agregan comentarios en html 
+        Segunda forma de agregar estilos y se coloca dentro de <head> -->
+    <style type="text/css"> 
+        body {
+            /* Así se agregan comentarios en css 
+               Para la etiqueta body cambiamos el color de fondo
+               y el color de la letra*/
+            background-color: black;
+            color: orangered;
+        }
+    </style>
+    <!-- Tercera forma de agregar estilos y es la más recomendada
+     Definir todos los estilos en un archivo style.css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body> <!-- Contiene todos los elementos visuales de la pagina
+            Solo puede haber un elemento <body> en un documento. -->
+    <header> <!-- representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes -->  
+        <h1>HTML 5 - WDF7</h1> <!--Los elementos de encabezado implementan seis niveles de encabezado del documento, <h1> es el más importante, y <h6>, el menos importante.-->
+    </header>
+    <main> <!-- representa el contenido principal del body de un documento o aplicación-->
+        <div> <!-- de "division" -división . Sirve para crear secciones o agrupar contenidos. -->
+            <!-- Primer forma de agregar estilos a una etiqueta -->
+            <h2 style="font-size: 2rem; color: aliceblue;">Archivo para mostrar uso de Git/GitHub</h2>
+            <p>Comandos básicos HTML 5</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element">Ver Documentación...</a> <!-- crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.--> 
+        </div>
+        <div>
+            <img width="5%" height="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="Logo de HTML5" /> <!-- Mostrar una imágen ya se local o en línea-->
+        </div>
+        <div>
+            <iframe width="400px" height="200px" src="https://www.youtube.com/embed/kS6yRA1FsDs" title="TRY NOT TO LAUGH WATCHING FUNNY FAILS VIDEOS 2022 #203" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML en la página actual.-->
+        </div>
+        <div>
+            <h2>Iniciamos !!!</h2>
+            <button class="btn-lg btn-primary">Click para Iniciar</button> <!--  representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.-->
+        </div>
+    </main>
+    <footer> <!-- Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados. --> 
+        <p>Primer HTML UCAMP - WDF7</p>
+    </footer> 
+</body>
+</html>
