@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- Buscará la última versión de HTML--> 
+<html lang="en"> <!-- representa la raiz de un documento HTML. El resto de elementos descienden de este elemento -->
+<head> <!-- Contiene todos los elementos no visuales de la pagina,metadatos, etc... -->
+    <meta charset="utf-8" /> <!-- Utilize codificación utf8 -->
+    <title>UCAMP-WDF7</title>
+    <!-- Tercera forma de agregar estilos y es la más recomendada
+    En este caso se utiliza el CDN de Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Así se agregan comentarios en html 
+        Segunda forma de agregar estilos y se coloca dentro de <head> -->
+    <style type="text/css"> 
+        body {
+            /* Así se agregan comentarios en css 
+               Para la etiqueta body cambiamos el color de fondo
+               y el color de la letra*/
+            background-color: whitesmoke;
+            color: black;
+        }
+    </style>
+    <!-- Tercera forma de agregar estilos y es la más recomendada
+     Definir todos los estilos en un archivo style.css-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body> <!-- Contiene todos los elementos visuales de la pagina
+            Solo puede haber un elemento <body> en un documento. -->
+    <header> <!-- representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes -->  
+        <span>Ejemplo de Título h1</span>
+        <h1>HTML 5 - WDF7</h1> <!--Los elementos de encabezado implementan seis niveles de encabezado del documento, <h1> es el más importante, y <h6>, el menos importante.-->
+        <br />
+        <nav> <!-- Para generar el menú de navegación -->  
+            <span>Ejemplo de Barra de navegación "nav"</span>
+            <ul>
+                <li><a class="a-item" href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- representa el contenido principal del body de un documento o aplicación-->
+        <br /><br /><br />
+        <div> <!-- de "division" -división . Sirve para crear secciones o agrupar contenidos. -->
+            <br />
+            <!-- Primer forma de agregar estilos a una etiqueta -->
+            <span>Uso de etiqueta "h2"</span>
+            <h2 style="font-size: 2rem; color: black;">Archivo para mostrar uso de Git/GitHub</h2>
+            <br />
+            <span>Uso de etiqueta "p"</span>
+            <p>Etiquetas básicas HTML 5 y uso de estilos CSS ...</p> <!-- Para distribuir el texto en párrafos -->
+            <br />
+            <span>Uso de etiqueta "h3"</span>
+            <h3>Insertar Links</h3>
+            <br />
+            <span>Uso de etiqueta "a" para realizar link hacia otro documento</span>
+            <hr />
+            <span>Se utiliza la etiqueta "pre" para mantener el formato de la descripción</span>
+            <pre>Se utiliza el atributo "target" con valor "_blank" para que abra
+la página en otra ventana.
+            </pre>
+            <hr />
+            <span>Uso de etiqueta "a" para realizar link hacia otro documento</pre>
+            <div>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element" target="_blank">Ver Documentación...</a> <!-- crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.--> 
+            </div>
+            <br />
+        </div>
+        <div>
+            <span>Uso de etiqueta "h4"</span>
+            <h4>Insertar Imágen</h4>
+            <br />
+            <span>Uso de etiqueta "img"</span>
+            <div>
+                <img width="5%" height="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="Logo de HTML5" /> <!-- Mostrar una imágen ya se local o en línea-->
+            </div>
+        </div>
+        <br />
+        <div>
+            <span>Uso de etiqueta "h5"</span>
+            <h5>Insertar Video</h5>
+            <br />
+            <span>Uso de etiqueta "iframe"</span>
+            <div>
+                <iframe width="400px" height="200px" src="https://www.youtube.com/embed/kS6yRA1FsDs" title="TRY NOT TO LAUGH WATCHING FUNNY FAILS VIDEOS 2022 #203" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML en la página actual.-->
+            </div>
+        </div>
+        <br />
+        <div>
+            <span>Uso de etiqueta "h6"</span>
+            <h6>Listas</h6>
+            <br />
+            <span>Uso de etiqueta "ul" listas desordenadas</span>
+            <ul> <!-- lista desordenada --> 
+                <li>Case 1</li>
+                <li>Case 2</li>
+                <li>Case 3</li>
+                <li>Case 4</li>
+                <li>Case 5</li>
+            </ul>
+        </div>
+        <br />
+        <div>
+            <span>Uso de etiqueta "ol" listas ordenadas</span>
+            <ol> <!-- lista ordenada --> 
+                <li>Case 1</li>
+                <li>Case 2</li>
+                <li>Case 3</li>
+                <li>Case 4</li>
+                <li>Case 5</li>
+            </ol>
+        </div>
+    <div class="clearfix"></div>     
+    <footer> <!-- Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados. --> 
+        <span>Uso de etiqueta "footer"</span>
+        <p>Primer HTML UCAMP - WDF7</p>
+        <span>Uso de etiqueta "button" usando clase predifinada por bootstrap</span>
+        <button class="btn-lg btn-primary">Click para Iniciar</button> <!--  representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.-->
+    </footer> 
+</body>
+</html>
